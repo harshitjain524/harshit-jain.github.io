@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Harshit Jain — Robotics & Control</title>
+  <meta name="description" content="Harshit Jain — CMU M.S. Mechanical (Advanced Study: Robotics & Control). Portfolio, projects, publications, and contact." />
+  <meta name="author" content="Harshit Jain" />
+  <meta property="og:title" content="Harshit Jain — Robotics & Control" />
+  <meta property="og:description" content="Portfolio, projects, publications, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand">Harshit<span>Jain</span></a>
+      <nav id="nav" class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Building reliable robot perception & control systems</h1>
+          <p class="lead">
+            M.S. Mechanical Engineering (Advanced Study — Robotics & Control) @ Carnegie Mellon University.
+            I design and deploy perception pipelines (RGB‑D, Mask R‑CNN/PointNet++), motion systems, and
+            automation for real‑world use.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">See Projects</a>
+            <a class="btn" href="assets/HarshitJain_Resume.pdf" target="_blank" rel="noopener">View Resume</a>
+          </div>
+          <ul class="quick-facts">
+            <li>Focus: Perception • Planning • Control</li>
+            <li>Tools: PyTorch, ROS2, OpenCV, Detectron2, MATLAB</li>
+            <li>Hardware: RGB‑D (D435/L515), NEMA steppers, Slip‑rings, CNC/3DP</li>
+          </ul>
+        </div>
+        <div class="hero-card">
+          <img src="assets/profile.jpg" alt="Harshit Jain profile photo" />
+          <div class="card">
+            <p><strong>Currently:</strong> CMU — Robotics & Control</p>
+            <p><strong>Interests:</strong> Robot perception, planning, manipulation</p>
+            <div class="socials">
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+              <a href="https://scholar.google.com/" target="_blank" rel="noopener" aria-label="Google Scholar">Scholar</a>
+              <a href="https://orcid.org/" target="_blank" rel="noopener" aria-label="ORCID">ORCID</a>
+              <a href="mailto:email@example.com" aria-label="Email">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>
+          I’m a robotics engineer focused on perception and control. Recent work includes a rock‑bolt detection & 6‑DoF
+          pose estimation pipeline (ABB collaboration) using Mask R‑CNN + PointNet++, and a 5‑axis FDM printer conversion where I led
+          design of the B‑axis (slip‑ring + geared drive) and build‑plate leveling.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Perception</h3>
+            <ul>
+              <li>Mask R‑CNN, YOLOv8, PointNet++</li>
+              <li>OpenCV, Open3D, ROS2</li>
+              <li>RGB‑D sensing, point clouds</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Control & Planning</h3>
+            <ul>
+              <li>Modern control, LQR, observers</li>
+              <li>Trajectory planning, kinematics</li>
+              <li>MATLAB/Simulink</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Build & Integration</h3>
+            <ul>
+              <li>SolidWorks, Fusion 360, Ansys</li>
+              <li>CNC/Turning, 3D printing</li>
+              <li>Electromechanical systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <div class="projects-grid">
+          <article class="project">
+            <img src="assets/project-rockbolt.jpg" alt="Rock bolt perception project" />
+            <div class="project-body">
+              <h3>Rock‑Bolt Perception (ABB)</h3>
+              <p>RGB‑D pipeline: Mask R‑CNN segmentation → point cloud → PointNet++ pose regression → length estimation.</p>
+              <ul class="tags"><li>Mask R‑CNN</li><li>PointNet++</li><li>Open3D</li></ul>
+              <div class="links">
+                <a href="#" target="_blank" rel="noopener">Paper</a>
+                <a href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </div>
+          </article>
+          <article class="project">
+            <img src="assets/project-5axis.jpg" alt="5-axis 3D printer project" />
+            <div class="project-body">
+              <h3>5‑Axis FDM Conversion (CMU)</h3>
+              <p>Added A/B rotational axes. Led B‑axis design: slip‑ring feedthrough, gear reduction, leveling mechanism.</p>
+              <ul class="tags"><li>CAD</li><li>Mechanisms</li><li>Controls</li></ul>
+              <div class="links">
+                <a href="#" target="_blank" rel="noopener">Slides</a>
+                <a href="#" target="_blank" rel="noopener">BOM</a>
+              </div>
+            </div>
+          </article>
+          <article class="project">
+            <img src="assets/project-cansat.jpg" alt="CanSat project" />
+            <div class="project-body">
+              <h3>CanSat System</h3>
+              <p>Sensor‑rich payload with NRF24L01, GNSS, telemetry; custom ground station; drone‑based launch.</p>
+              <ul class="tags"><li>Embedded</li><li>Sensors</li><li>RF</li></ul>
+              <div class="links">
+                <a href="#" target="_blank" rel="noopener">Report</a>
+                <a href="#" target="_blank" rel="noopener">Photos</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="container">
+        <h2>Publications</h2>
+        <ul class="pubs">
+          <li><strong>Results in Engineering</strong>, 2025 — Autonomous EV Charging Robot Platform (Elsevier).</li>
+          <li><strong>ICAME 2024</strong> — Optimized Automatic Robot Charging Station (under review at MDPI Sustainability).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="timeline">
+          <div class="t-item">
+            <h3>Course Assistant — Trustworthy AI, CMU</h3>
+            <span>2025</span>
+            <p>Supported course operations and AI tooling for grading/feedback.</p>
+          </div>
+          <div class="t-item">
+            <h3>Industrial Trainee — Bosch Rexroth</h3>
+            <span>2023</span>
+            <p>PLC programming and IIoT sensor‑drive interfacing for industrial applications.</p>
+          </div>
+          <div class="t-item">
+            <h3>Intern — Jay Bharat Maruti (JBM)</h3>
+            <span>2023</span>
+            <p>APQP/PPAP on the shop floor; quality & production optimization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:email@example.com">email@example.com</a> • Pittsburgh, PA</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Harshit Jain. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const y = document.getElementById('y'); y.textContent = new Date().getFullYear();
+    function toggleNav() {
+      const nav = document.getElementById('nav');
+      const btn = document.querySelector('.nav-toggle');
+      const expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
